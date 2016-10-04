@@ -1,5 +1,5 @@
 #!/bin/sh
-#version 1.0
+#version 1.0.1
 #Unmounts BOOTCAMP from Desktop in macOS.
 
 #Get the disk
