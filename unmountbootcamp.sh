@@ -1,11 +1,11 @@
 #!/bin/sh
-#version 1.0.1
+#version 1.0.2
 #Unmounts BOOTCAMP from Desktop in macOS.
 
 #Get the disk
-BOOTCAMP=`diskutil list | grep BOOTCAMP | awk '{ print substr($0,69,9) }'`
+BOOTCAMP=$(diskutil list | grep BOOTCAMP | awk '{ print substr($0,69,9) }')
 
-if [ $BOOTCAMP = "" ]; then
+if [ "$BOOTCAMP" = "" ]; then
 	exit 0
 fi
 
